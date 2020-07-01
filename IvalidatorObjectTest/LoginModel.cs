@@ -16,7 +16,18 @@ namespace IvalidatorObjectTest
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            
+            var results = new List<ValidationResult>();
+            if (String.IsNullOrEmpty(Username))
+            {
+                results.Add(new ValidationResult(" The username cannot be empty"));
+
+            } 
+            if (String.IsNullOrEmpty(Password))
+            {
+                results.Add(new ValidationResult(" The username cannot be empty"));
+
+            }
+            return results;
         }
     }
 }

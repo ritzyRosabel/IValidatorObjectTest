@@ -9,12 +9,14 @@ namespace IvalidatorObjectTest
 {
     public class LoginModel:IValidatableObject
     {
+        [Required]
         public string Username { get; set; }
+        [Required]
         public string Password { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

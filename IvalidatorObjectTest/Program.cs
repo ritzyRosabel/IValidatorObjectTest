@@ -14,6 +14,13 @@ namespace IvalidatorObjectTest
             string username = Console.ReadLine();
             string password = Console.ReadLine();
 
+            ValidateCredentials(new LoginModel { Username = username, Password = password});
+
+        }
+
+        private static void ValidateCredentials(LoginModel loginModel)
+        {
+            throw new NotImplementedException();
         }
     }
 }

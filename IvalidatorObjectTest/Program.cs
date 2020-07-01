@@ -10,6 +10,10 @@ namespace IvalidatorObjectTest
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter your username and password");
+            string username = Console.ReadLine();
+            string password = Console.ReadLine();
+
         }
     }
 }
